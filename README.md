@@ -5,7 +5,7 @@ Egna exempel och övningar från boken, utgiven av Thelin Läromedel
 
 ![spelprogrammering.nu med HTML5 och JavaScript - Utgåva 2, 2013](bokbild.png)
 
-Utgiven av Thelin Läromedel - [www.skolportalen.se](https://www.skolportalen.se "Öppna skolportalens sida")  
+Utgiven av Thelin Läromedel - [www.skolportalen.se](https://www.skolportalen.se "Öppna skolportalens sida") (Jag hittar dock ej boken där längre, prova adlibris)
 Författare: Mikael Tylmad & Pontus Walck
 
 Här hittar du författarnas webbsida som hör till boken 
