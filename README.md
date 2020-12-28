@@ -5,7 +5,7 @@ Egna exempel och övningar från boken, utgiven av Thelin Läromedel
 
 ![spelprogrammering.nu med HTML5 och JavaScript - Utgåva 2, 2013](bokbild.png)
 
-Utgiven av Thelin Läromedel - [www.skolportalen.se](https://www.skolportalen.se "Öppna skolportalens sida")
+Utgiven av Thelin Läromedel - [www.skolportalen.se](https://www.skolportalen.se "Öppna skolportalens sida")  
 Författare: Mikael Tylmad & Pontus Walck
 
 Tanken är att ni som använder läromedlet ska kunna komma hit och studera, ladda hem och testa mina lösningsförslag.
@@ -17,13 +17,9 @@ exempel på hur man kan lösa något._
 
 Senast uppdaterad 2020-12-28
 
-Niklas Engvall,
-Borlänge
-
-
-
-
-
+Niklas Engvall,  
+  
+  
 ## Innehållsförteckning 
 
   :heavy_minus_sign: = Ingen källkod finns till avsnittet<br />
