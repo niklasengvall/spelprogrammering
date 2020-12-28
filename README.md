@@ -34,7 +34,7 @@ Borlänge
 
 | Kapitel | Avsnitt                                              |  Sida  |   Status  |
 | :-----: | ---------------------------------------------------- | :----: | :-------: |
-|    1    | JavaScript och grafik                                |     1  | :white_check_mark: |
+|    1    | JavaScript och grafik                                |     1  | :heavy_check_mark: |
   
   
 ### Uppgifter

@@ -1,0 +1,36 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.8 Ändra på koordinatsystem
+     Sidnr:     3
+     
+     Beskrivning:
+     Visar funktioner för att ändra på koordinatsystemet, rotera det och spara rittillstånd
+     
+     Fil:    1.8, sid. 10 - koordinatsystem.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Ritar ut en grön cirkel och blå rektangel
+          circle(100, 50, 50, "green"); // Grön cirkel är dold
+          rectangle(0, 0, 200,100, "blue") // Rektangelns täcker cirkeln i nuvarande form
+
+          save(); // Spara nuvarande rittillstånd på 
+          translate(0, 100); // Flytta koordinatsystemet 0 pixlar åt höger och 100 pixlar ned
+       
+          // Rita ut en gul cirkel
+          circle(100, 50, 50, "yellow"); // I nya kordinatsystemet hamnar mittpunkten eg. på x=100 och y=150
+          translate(200, 0); // Flytta koordinatsystemet 200 pixlar åt höger, 0 pixlar nedåt
+          rotate(45); // Rotera ritytan (canvas) 45 grader medsols
+       
+          // Rita ut en svart rektangel som täcker den gula cirkeln delvis
+          rectangle(0, 0, 200,100, "black") // Rektangelns övre vänstra hörn är nu vid x=200 och y=100
+          restore(); // Återställ till föregående rittilstånd innan vi körde translate och rotate
+       
+          // ritar ut en cirkel i det återställda koordinatsystemet 
+          circle(50, 50, 50, "magenta"); 
+
+     }
+</script>
