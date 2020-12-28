@@ -1,0 +1,36 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.5 Variabler
+     Sidnr:     7
+     
+     Beskrivning:
+     Funktion för illustrera variabelanvändning där jag ritar ut cirklar på skärmen
+     
+     Fil:    text.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          var x = 50; // var deklarerar variablen x som lokalt tillhörande funktionen start
+          var storlek = 80;
+
+          // Ritar ut tre cirklar på skärmen
+          // circle(x1, y1, r, color)
+          circle(100 + x, 150, storlek, "red");
+          circle(100 + 2 * x, 150, storlek, "green");
+          circle(100 + 3 * x, 150, storlek, "blue");
+
+          // Fortsättning på sidan 7 där vi ändrat variablerna för att illustrera detta så placerar jag dem lämngre ned
+          // dvs. jag ändrar y positionen från 150 till 400
+          var x = 200; 
+          var storlek = 150;
+
+          // Ritar ut tre cirklar på skärmen
+          // circle(x1, y1, r, color)
+          circle(100 + x, 400, storlek, "red");
+          circle(100 + 2 * x, 400, storlek, "green");
+          circle(100 + 3 * x, 400, storlek, "blue");
+     }
+</script>
