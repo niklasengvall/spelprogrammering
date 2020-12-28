@@ -1,0 +1,32 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.7 Slump
+     Sidnr:     9
+     
+     Beskrivning:
+     Funktion för illustrera s.k. slumpgenererade tal och rita ut en cirkel på slumpmässiga ställen
+     
+     Fil:    1.7, sid. 9 - slump.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          ball = {};      // Skapar en tom objektvariabel ball
+          ball.x = 100;   // Fyller den med egenskaper
+          ball.y = 200;   // -"-
+          ball.size = 20; // -"-
+     
+          // Ritar ut en röd cirkel på skärmen
+          // circle(x1, y1, r, color)          
+          circle(ball.x, ball.y, ball.size, "red");
+
+          // Fortsättning på sidan 9 där vi ändrat variabels egenskaper något
+          // i en kortare objektsdeklarationsform
+          ball = { x: 200, y: 400, size: 40};
+
+          // Ritar ut en ny större cirkel i grön färg på skärmen
+          circle(ball.x, ball.y, ball.size, "green");
+     }
+</script>
