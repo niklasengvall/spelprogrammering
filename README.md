@@ -8,6 +8,9 @@ Egna exempel och övningar från boken, utgiven av Thelin Läromedel
 Utgiven av Thelin Läromedel - [www.skolportalen.se](https://www.skolportalen.se "Öppna skolportalens sida")  
 Författare: Mikael Tylmad & Pontus Walck
 
+Här hittar du författarnas webbsida som hör till boken 
+[www.spelprogrammering.nu](http://www.spelprogrammering.nu "Öppna spelprogrammering.nu webbsida")  
+
 Tanken är att ni som använder läromedlet ska kunna komma hit och studera, ladda hem och testa mina lösningsförslag.
 Materialet är ej färdigställt.
 
