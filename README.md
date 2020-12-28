@@ -17,11 +17,9 @@ exempel på hur man kan lösa något._
 
 Senast uppdaterad 2020-12-28
 
-Niklas Engvall, 
+Niklas Engvall.  
 Borlänge   
-    
-    
-  
+
 ## Innehållsförteckning 
 
   :heavy_minus_sign: = Ingen källkod finns till avsnittet<br />
