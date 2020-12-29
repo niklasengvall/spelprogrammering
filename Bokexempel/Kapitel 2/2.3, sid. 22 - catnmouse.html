@@ -1,0 +1,50 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.3 Ett katt och råtta spel
+     Sidnr:     22
+     
+     Beskrivning:
+     Ett katt och råtta spel, där målet är att katten ska fånga råttan
+     En spelare styr katten (grå) med tangentbordet och den andra spelaren 
+     styr musen (röd) med muspekaren 
+     
+     Fil:    2.3, sid. 22 - catnmouse.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Sätter koordinaterna och hastigheten (antal pixlar den förflyttar sig med) för katten
+          cat = {x: 200, y: 20, fart: 10};
+          // Göm muspekaren
+          hideMouse();
+          // Styr så att uppdate funktionen anropas 60 ggr per sekund
+          updatesPerSecond = 60
+     }
+
+     // uppdate körs automatiskt inför varje skärmuppdatering i en s.k. evighetsloop
+     function update()
+     {
+          // Sudda gamla skärminnehållet så att spåren efter föregående utritnming inte visas
+          clearScreen();
+
+          // Om en piltangent trycks ned (sant/true) så ska katten förflyttas i den riktningen
+          if(keyboard.left) { cat.x -= cat.fart; }
+          if(keyboard.right) { cat.x += cat.fart; }
+          if(keyboard.up) { cat.y -= cat.fart; }
+          if(keyboard.down) { cat.y += cat.fart; }
+
+          // Rita ut katten och råttan
+          circle(cat.x, cat.y, 20, "grey");
+          circle(mouse.x, mouse.y, 20, "red");
+
+          // Katten har fångat råttan om distansen är mindre än 40 pixlar
+          if(distance(cat, mouse) < 40)
+          {
+               // Visa muspekaren och sluta kör koden i update funktionen
+               showMouse();
+               stopUpdate();
+          }
+     }
+</script>
