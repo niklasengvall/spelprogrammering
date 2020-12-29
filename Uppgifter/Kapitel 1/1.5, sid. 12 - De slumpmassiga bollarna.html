@@ -1,0 +1,30 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.9 Uppgifter
+     Sidnr:     12
+     
+     Beskrivning:
+     Programmet ritar ut 4 st cirklar i slumpmässiga storlekar och positioner
+     Varje gång du laddar om sidan så placeras de på olika platser och med olika storlekar
+     
+     Fil:    1.5, sid. 12 - De slumpmassiga bollarna.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Skapar 4 variabler med slumpmässiga x  och 
+          // y positioner  samt slumpmässig radie
+          c1 = { x: random(540), y: random(540), radie: random(540) }; 
+          c2 = { x: random(540), y: random(540), radie: random(540) };
+          c3 = { x: random(540), y: random(540), radie: random(540) };
+          c4 = { x: random(540), y: random(540), radie: random(540) };
+          
+          // Ritar ut 4 cirklar i färgerna rött, orange, gult och grönt
+          circle(c1.x, c1.y, c1.radie, "red");
+          circle(c2.x, c2.y, c2.radie, "orange");
+          circle(c3.x, c3.y, c3.radie, "yellow");
+          circle(c4.x, c4.y, c4.radie, "green");
+     }
+</script>

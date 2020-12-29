@@ -1,0 +1,43 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.9 Uppgifter
+     Sidnr:     12
+     
+     Beskrivning:
+     Jag ritar regnbågen i två upplagor med hjälp av ringar och döljer sedan 
+     nedre halvan av dem med hjälp av en vit rektangel
+     
+     Fil:    1.4, sid. 12 - Regnbagen.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          var storlek = 150; // cirkelradien mått anges i pixlar
+
+          // Ritar första regnbågen enligt färgerna, rött, orange, gult, grönt,
+          // blått, indigo och violet
+          ring(200, 200, storlek, (1/7)* storlek,"red") // Ringens linjetjocklek ska vara 1/7 av storleken
+          ring(200, 200, (6 / 7) * storlek, (1 / 7) * storlek, "orange") // Ringarna nedan ska vara 1/7 mindre än den föregående
+          ring(200, 200, (5 / 7) * storlek, (1 / 7) * storlek, "yellow")
+          ring(200, 200, (4 / 7) * storlek, (1 / 7) * storlek, "green")
+          ring(200, 200, (3 / 7) * storlek, (1 / 7) * storlek, "blue")
+          ring(200, 200, (2 / 7) * storlek, (1 / 7) * storlek, "indigo")
+          ring(200, 200, (1 / 7) * storlek, (1 / 7) * storlek, "violet")
+
+          // Ritar andra regnbågen enligt samma färgordning som ovan, men placerad 
+          //längre åt höger
+          ring(521, 200, storlek, (1/7)* storlek,"red") 
+          ring(521, 200, (6 / 7) * storlek, (1 / 7) * storlek, "orange") 
+          ring(521, 200, (5 / 7) * storlek, (1 / 7) * storlek, "yellow")
+          ring(521, 200, (4 / 7) * storlek, (1 / 7) * storlek, "green")
+          ring(521, 200, (3 / 7) * storlek, (1 / 7) * storlek, "blue")
+          ring(521, 200, (2 / 7) * storlek, (1 / 7) * storlek, "indigo")
+          ring(521, 200, (1 / 7) * storlek, (1 / 7) * storlek, "violet")
+
+          // Ritar en vit rektangel som kapar ringarna och gör 
+          // 2 halvcirkulära regnbågar     
+          rectangle(30, 200, 660, 350, "white")
+     }
+</script>

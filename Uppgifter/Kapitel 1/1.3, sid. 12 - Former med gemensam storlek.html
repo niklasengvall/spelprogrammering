@@ -1,0 +1,27 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.9 Uppgifter
+     Sidnr:     12
+     
+     Beskrivning:
+     Jag använder en storleksvariabel för att påverka storleken på olika former som jag ritar ut
+     
+     Fil:    1.3, sid. 12 - Former med gemensam storlek.html
+     Skapad: 2020-12-28
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          var storlek = 100; // mått anges i pixlar
+
+          // Rita en fyrkant
+          rectangle(0, 0, storlek, storlek, "red");
+          // Rita en triangel
+          triangle(200-(storlek/2), 100+(storlek/2), 250+(storlek/2), 0, 300+(storlek*1.5), 100+(storlek/2), "orange");
+          // Rita en cirkel
+          circle(600-(storlek/2), 100, storlek/2, "yellow")
+          // Rita en linje
+          line(600-(storlek/2), 200+(storlek/2), 700+(storlek/2), 100-(storlek/2), 20, "cyan");
+     }
+</script>

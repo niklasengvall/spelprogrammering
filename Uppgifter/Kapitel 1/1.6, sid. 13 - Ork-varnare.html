@@ -1,0 +1,34 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.9 Uppgifter
+     Sidnr:     12
+     
+     Beskrivning:
+     Programmet ritar ut ett svärd som slumpar färg på klingan varje gång 
+     sidan laddas laddas om. 
+     
+     Fil:    1.6, sid. 13 - Ork-varnare.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Skapar en variabel som slumpar färger med blå ton 
+          color = { r: random(64), g: 128 + random(64), b: 192 + random(64) }; 
+          
+          // Ritar ut ett svärd med en klinga som slumpar färg i blå nyanser
+          triangle(200,100, 225, 50, 250, 100, mixColor(color.r, color.g, color.b))
+          rectangle(200, 100, 50, 400, mixColor(color.r, color.g, color.b))
+          
+          // Ritar parerstång i gyllene färg
+          line(150, 500, 300, 500, 15, mixColor(255 , 192, 64))
+          
+          // Ritar kaveln, se sid 191 i läroboken
+          rectangle(212, 500, 25, 100, mixColor(192,128,64))
+          
+          // Ritar knapp delen av svärdet
+          circle(225, 600, 25, mixColor(255, 192, 64))
+          circle(225, 600, 15, mixColor(160, 96, 32))
+     }
+</script>
