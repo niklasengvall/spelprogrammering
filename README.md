@@ -18,7 +18,7 @@ _Av respekt till författare och upphovsrättsliga lagar så har jag medvetet ä
 kodexemplen från boken. Detta i sin tur ger dig som läsare fler infallsvinklar och 
 exempel på hur man kan lösa något._
 
-Senast uppdaterad 2020-12-28
+Senast uppdaterad 2020-12-29
 
 Niklas Engvall.  
 Borlänge   
@@ -41,4 +41,4 @@ Borlänge
 
 | Kapitel | Uppgifter                                            |  Sida  |   Status  |
 | :-----: | ---------------------------------------------------- | :----: | :-------: |
-|    1    | 1.1 Rita former med JavaScript                       |    12  |           |
+|    1    | 1.1 Rita former med JavaScript                       |    12  | :heavy_check_mark: |
