@@ -1,0 +1,27 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   1 - JavaScript och grafik
+     Avsnitt:   1.9 Uppgifter
+     Sidnr:     12
+     
+     Beskrivning:
+     Programmet ritar ut två roterade rektanglar i form av ett V 
+     
+     
+     Fil:    1.7, sid. 13 - Rotera mera.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          save(); // // Spara nuvarande rittillstånd
+          rotate(-30); // Rotera ritytan (canvas) 30 grader motsols
+          // Ritar ut första rektangeln
+          rectangle(100, 100, 25, 200, mixColor(192, 64, 32));
+          restore(); // Återställ till g:a rittilståndet
+          translate(271,-125); // Flyttar ritytan, detta var det knepigaste
+          rotate(30); // Rotera ritytan (canvas) 30 grader medsols
+          // Ritar ut andra rektangeln så att vi får ett V
+          rectangle(125, 100, 25, 200, mixColor(192, 64, 32))
+     }
+</script>
