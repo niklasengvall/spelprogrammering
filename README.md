@@ -34,11 +34,23 @@ Borlänge
 
 | Kapitel | Avsnitt                                              |  Sida  |   Status  |
 | :-----: | ---------------------------------------------------- | :----: | :-------: |
-|    1    | JavaScript och grafik                                |     1  | :heavy_check_mark: |
+|    1    | 1   JavaScript och grafik                            |     1  | :heavy_minus_sign: |
+|    1    | 1.1 Kom igång med JavaScript                         |     1  | :heavy_check_mark: |
+|         | 1.2 Rita geometriska former                          |     3  | :heavy_check_mark: |
+|         | 1.3 Rita bilder                                      |     6  | :heavy_check_mark: |
+|         | 1.4 Text                                             |     6  | :heavy_check_mark: |
+|         | 1.5 Variabler                                        |     7  | :heavy_check_mark: |
+|         | 1.6 Häftiga variabler                                |     8  | :heavy_check_mark: |
+|         | 1.7 Slump                                            |     9  | :heavy_check_mark: |
+|         | 1.8 Ändra på koordinatsystemet                       |    10  | :heavy_check_mark: |
+|    2    | 2   Animering och interaktivitet                     |    10  | :heavy_minus_sign: |
+|    2    | 2.1 Animering                                        |    10  |           |
   
   
 ### Uppgifter
 
-| Kapitel | Uppgifter                                            |  Sida  |   Status  |
+| Kapitel | Avsnitt                                              |  Sida  |   Status  |
 | :-----: | ---------------------------------------------------- | :----: | :-------: |
-|    1    | 1.1 Rita former med JavaScript                       |    12  | :heavy_check_mark: |
+|    1    | 1.9 Uppgifter - JavaScript och grafik                |    12  | :heavy_check_mark: |  
+|    2    | 2.6 Uppgifter - Animering och interaktivitet         |    30  |           |  
+
