@@ -1,0 +1,31 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.2 Interaktivitet
+     Sidnr:     18
+     
+     Beskrivning:
+     En enkel test med if-sats och prata med användaren med hjälp av JavaScript
+     Du kan fråga användaren med meddelanderutan prompt, ge användaren valmöjlighet 
+     med confirm och ge besked med alert som endast har en OK knapp.
+     
+     Fil:    2.2.1, sid. 18 - prata med användaren.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Fråga användaren efter hens namn och lagra det i variablen namn
+          var namn = prompt("Vad heter du?");
+
+          // Fråga om användaren vill veta
+          if(confirm(namn + " vill du veta vad du får i julklapp?"))
+          {    // Om användaren klickar på OK (Ja) visas nedanstående meddelanderuta
+               alert("Du får en ny dator i julklapp.");
+          }
+          else
+          {    // Om användaren klickar på Avbryt (Nej) visas nedanstående meddelanderuta
+               alert("Bra! Du gillar överraskningar."); 
+          }
+     }
+</script>

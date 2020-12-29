@@ -1,0 +1,38 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.2 Interaktivitet
+     Sidnr:     19
+     
+     Beskrivning:
+     Programmet frågar efter användarens namn och ålder, beroende på ålder så 
+     ges olika svar. Här använder jag nästlade if-satser för att ge olika besked 
+     
+     Fil:    2.2.1, sid. 19 - nästlade if-satser.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Fråga användaren efter hens namn och ålder
+          var namn = prompt("Vad heter du?");
+          var alder = prompt("Ange ålder:");
+
+          // Skriv ett välkomstmeddelande med variablen namn inkluderad
+          text(25,100,24, "Tjenna " + namn + "!", "blue");
+
+          // Testa om användaren är yngre än 20 år
+          if(alder < 20)
+          {    // Om sant visas följande text
+               text(50,150,24, "Du får inte handla alkohol på Systembolaget ännu!", "blue");
+          }    // Gör en ny test och testa om användaren är yngre än 30 år
+          else if(alder < 30)
+          {    // Om sant så visas följande text
+               text(50,150,24, "Visa din legitimation, tack!", "blue");
+          }
+          else
+          {    // Om inte testen ovan blev sann, visas nedanstående text
+               text(50,150,24, "Du ser så ung ut, för din ålder!", "blue");
+          }
+     }
+</script>

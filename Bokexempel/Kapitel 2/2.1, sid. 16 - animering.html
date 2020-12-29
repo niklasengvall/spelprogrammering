@@ -1,0 +1,33 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.1 Ändra på koordinatsystem
+     Sidnr:     16
+     
+     Beskrivning:
+     En boll som rör sig diagonalt över skärmen med annan bakgrundsfärg och spåren efter den suddas
+     
+     Fil:    2.1, sid. 16 - animering.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Sätter koordinaterna för en boll uppe i vänstra hörnet (origo) på skärmen
+          boll = {x: 0, y: 0};
+     }
+
+     // uppdate körs automatiskt inför varje skärmuppdatering i en s.k. evighetsloop
+     function update()
+     {
+          // Sudda gamla skärminnehållet så att spåren efter föregående utritnming inte visas
+          clearScreen();
+          // Fyll skärmen med röd färg
+          fill("red");
+          // Rita ut en grön boll på skärmen med angivna x & y koordinater
+          circle(boll.x, boll.y, 45, "green");
+          // Öka x- & y-koordinaterna med 1 
+          boll.x++;
+          boll.y++;
+     }
+</script>

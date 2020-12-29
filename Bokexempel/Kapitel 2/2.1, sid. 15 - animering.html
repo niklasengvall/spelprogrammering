@@ -1,0 +1,29 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.1 Ändra på koordinatsystem
+     Sidnr:     15
+     
+     Beskrivning:
+     En boll som rör sig diagonalt över skärmen
+     
+     Fil:    2.1, sid. 15 - animering.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Sätter koordinaterna för en boll uppe i vänstra hörnet (origo) på skärmen
+          boll = {x: 0, y: 0};
+     }
+
+     // uppdate körs automatiskt inför varje skärmuppdatering i en s.k. evighetsloop
+     function update()
+     {
+          // Rita ut en grön boll på skärmen med angivna x & y koordinater
+          circle(boll.x, boll.y, 45, "green");
+          // Öka x- & y-koordinaterna med 1 
+          boll.x++;
+          boll.y++;
+     }
+</script>

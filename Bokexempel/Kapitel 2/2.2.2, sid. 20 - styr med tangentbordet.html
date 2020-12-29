@@ -1,0 +1,47 @@
+<!-- spelprogrammering.nu med HTML5 och Javascript - utgåva 2
+
+     Kapitel:   2 - Animering och interaktivitet
+     Avsnitt:   2.2.2 Reagera på tangentbordet
+     Sidnr:     16
+     
+     Beskrivning:
+     Styr med hjälp av tangentbordet och variabeln keyboard en boll över skärmen
+     
+     Fil:    2.2.2, sid. 20 - styr med tangentbordet.html
+     Skapad: 2020-12-29
+-->
+<script src="http://spelprogrammering.nu/simple.js">
+     function start()
+     {
+          // Sätter koordinaterna för en boll uppe i vänstra hörnet (origo) på skärmen
+          boll = {x: 0, y: 0};
+     }
+
+     // uppdate körs automatiskt inför varje skärmuppdatering i en s.k. evighetsloop
+     function update()
+     {
+          // Sudda gamla skärminnehållet så att spåren efter föregående utritnming inte visas
+          clearScreen();
+
+          // Om en piltangent trycks ned (sant/true) så ska bollen förflyttas i den riktningen
+          if(keyboard.left)
+          {
+               // Flytta bollen i steg om 4 pixlar
+               boll.x -= 4;
+          }
+          if(keyboard.right)
+          {
+               boll.x += 4;
+          }
+          if(keyboard.up)
+          {
+               boll.y -= 4;
+          }
+          if(keyboard.down)
+          {
+               boll.y += 4;
+          }      
+          // Rita ut en grön boll på skärmen med angivna x & y koordinater
+          circle(boll.x, boll.y, 45, "green");
+     }
+</script>
